@@ -61,3 +61,49 @@
    * Observe and report
 * Heuristics
    * Artificial intelligence to identify
+
+##Protecol Analyzer
+* Sniffer is a registered trademark of NetScout Systems, Inc.
+    * A common reference
+* Captures and displays network traffic
+    * Packet by packet
+* Wireshark is a popular one
+
+##Spam filters / Mail gateways
+* Stop unsolicited email at the gateway before it reaches the user
+* On-site or cloud based
+* Different identification methods
+    * Whitelist
+        * Only recieve email from trusted senders
+    * SMTP standards checking
+        * Block anything that doesnt follow RFC standards
+    * rDNS - Reverse DNS
+        * Block email where the sender's domain doesnt match the IP address
+    * Tarpitting
+        * Intentionally slow down the server conversation
+    * Recipient filtering
+        * Block all emainoaddressed to a vaild recipent email address
+
+##Web Application Firewall (WAF)
+* Not like a "normal" firewall
+    * Applies rulesssss to HTTP conversation
+* Allow or deny based on expected input
+    * Unexpected input is a common method if exploting application
+* SQL injection
+    * Add your own commmands to an application's SQL query
+* A major focus of Payment Card Industry Data Security Standard (PCI DSS)
+
+##Application-aware security devices
+* The OSI Application layer
+    * All data in every packet
+* Can be called different names
+    * Application layer gateway
+    * Stateful multilayer inspection
+    * Deep packet inspection
+* Requires some advanced decodes
+    * Every packet must be analyzed, categorized, and a security decision is determined
+* Network-based firewalls
+    * Control traffic flows based othe application
+* Intrusion prevention systems
+    * Identify the application
+    * Apply application-specific vulnerability signatures to the traffic
